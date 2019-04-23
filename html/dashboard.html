@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dashboard</title>
+</head>
+<body>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+    .bodying{
+        background-color: black;
+    }
+    .random{
+        /* font-size: 28px; */
+        font-size: 34px;
+    margin-left: 10px;
+    padding: 0;
+    line-height: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 650;
+    letter-spacing: 3px;
+    }
+    @media only screen and (min-width: 600px) {
+  .shift {
+    margin-left:4rem
+  }
+}
+    </style>
+</head>
+<body class="">
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-dark height:3rem;background-color:black">
+        <a class="navbar-brand p-1 shift" href="/app/home" style="border-left:4px solid #18d26e; height: 55px;"><h3 class="random p-2">TASK</h3></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" >
+          <ul class="navbar-nav" style="margin-left:50rem">
+            <li class="nav-item active" >
+              <a class="nav-link" href="#">Welcome <span class="sr-only" >About Us</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav> <br><br>
+      <div id="myprofile"  class="tab-pane fade show active" role="tabpanel" aria-labelledby="myprofile">
+
+          <div class="container  mx-auto" style="padding-top: 20px;">
+            <h1 class="page-header"> Profile</h1>
+          
+          
+          
+          
+          
+            <div class="row max-auto control p-2 ml-5" >
+              <!-- left column -->
+              <!-- <div class="col-md-4 col-sm-6 col-xs-8">
+                <div class="text-center"><form class="form-horizontal" role="form" action="/app/editprofile" method="post" enctype="multipart/form-data">
+                  <img src="<%=user_details.img%>" style=" height: 200px; width: 200px; border-radius: 100px" alt="avatar" >
+                  <h6>Upload a different photo...</h6>
+                  <input type="file" class="center-block well well-sm" name="img">
+                </div>
+              </div> -->
+              <!-- edit form column -->
+              <div class="col-md-8 col-sm-6 col-xs-12 p-2 personal-info mx-auto">
+          
+          
+                <h3 class="p-2">Update info</h3>
+                  <div class="form-group">
+          
+                    <div class="col-lg-8">
+                      <input class="form-control" id="name" placeholder="Name:" value=""  name="name" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+          
+                    <div class="col-lg-8">
+                      <input class="form-control" id="mobile" placeholder="Mobile No." required value =""  name="mob" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+          
+                    <div class="col-lg-8">
+                      <input class="form-control" id="email" placeholder="Email:" value="" name="user_email" type="email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+          
+                    <div class="col-lg-8">
+                      <div class="ui-select">
+                        <select class="gender" class="form-control">
+                          <option value="m" name="gender">Male</option>
+                          <option value="f" name="gender">Female</option>
+                          </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+          
+                    <div class="col-lg-8">
+                      <input class="form-control" id="age" placeholder="Age" value="" name="user_age" type="number">
+                    </div>
+                  </div>
+                  <div class="form-group">
+          
+                      <div class="col-lg-8">
+                        <input class="form-control" id="password" placeholder="Password" value="" name="user_password" type="password">
+                      </div>
+                    </div>
+                  <div class="form-group">
+          
+                    <div class="col-lg-8">
+                      
+                      <input class="form-control" id="address" placeholder="Address" value="" name="user_address" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-3 control-label"></label>
+                    <div class="col-md-8">
+                      <input class="btn btn-default" value="Cancel" type="reset">
+                      <span></span>
+          
+                      <input class="btn btn-primary" id="update" value="Save Changes" type="button">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+              </div>
+</body>
+<script src="../js/update.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
